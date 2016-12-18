@@ -1,7 +1,5 @@
 #!/bin/bash
 
-bpm=120;
-
 quarter=$( echo "scale=2; 60 / $bpm" | bc );
 quarter_eigth=$( echo "scale=2; $quarter * 1.5" | bc);
 eigth=$( echo "scale=2; $quarter / 2" | bc )
