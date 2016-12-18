@@ -1,0 +1,27 @@
+#!/bin/bash
+
+bpm=120
+
+source tones
+
+
+# first line
+c;
+f; l=$eigth; f; g; f; e
+l=$quarter; d; d; d;
+g; l=$eigth; g; a; g; f
+l=$quarter; e; e; e;
+a; l=$eigth; a; bb; a; g;
+# second line
+l=$quarter; f; d; l=$eigth; c; c
+l=$quarter; d; g; e;
+l=$halves; f; l=$quarter; c
+l=$quarter; f; f; f;
+l=$halves; e; l=$quarter; e
+l=$quarter; f; e; d;
+# third line
+l=$halves; c; l=$quarter; g;
+a; g; f;
+l=$quarter; factor=$octave_high; c; factor=$octave; c; l=$eigth; c; c
+l=$quarter; d; g; e;
+l=$halves; f;

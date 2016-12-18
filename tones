@@ -1,0 +1,72 @@
+#!/bin/bash
+
+bpm=120;
+
+quarter=$( echo "scale=2; 60 / $bpm" | bc );
+quarter_eigth=$( echo "scale=2; $quarter * 1.5" | bc);
+eigth=$( echo "scale=2; $quarter / 2" | bc )
+halves=$( echo "scale=2; $quarter * 2" | bc )
+whole=$( echo "scale=2; $quarter * 4" | bc )
+
+l=$quarter;
+
+octave=1;
+octave_high=2;
+octave_low=0.5;
+
+factor=$octave
+
+bp () {
+   f=$( echo "scale=2; $f * $factor" | bc )
+	l2=$( echo "scale=2; $l / 2" | bc )
+	l2000=$( echo "scale=2; $l2 * 1000 " | bc )
+#	echo $l
+#	echo $l2
+#	echo $l2000
+	beep -f $f -l $l2000;
+	sleep $l2
+}
+c() {    f=261.626; bp; }
+db() {   f=277.183; bp; }
+d() {		f=293.665; bp; }
+eb() { 	f=311.127; bp; }
+e() { 	f=329.628; bp; }
+f() { 	f=349.228; bp; }
+gb() { 	f=369.994; bp; }
+g() {  	f=391.995; bp; }
+ab() { 	f=415.305; bp; }
+a() {	 	f=440;  bp;}
+bb() {   f=466.164; bp; }
+b() {		f=493.164; bp; }
+
+
+
+
+
+
+
+#b
+#bb
+#a
+#ab
+#g
+#gb
+#f
+#e
+#eb
+#d
+#db
+#c
+#factor=$octave_low
+#b
+#bb
+#a
+#ab
+#g
+#gb
+#f
+#e
+#eb
+#d
+#db
+#c
