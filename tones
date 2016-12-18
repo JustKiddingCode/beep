@@ -18,13 +18,13 @@ factor=$octave
 
 bp () {
    f=$( echo "scale=2; $f * $factor" | bc )
-	l2=$( echo "scale=2; $l / 2" | bc )
-	l2000=$( echo "scale=2; $l2 * 1000 " | bc )
+	sleep_time=$( echo "scale=2; $l * 1 / 6" | bc )
+	play_time=$( echo "scale=2; $l * 1000 * 5 / 6" | bc )
 #	echo $l
 #	echo $l2
 #	echo $l2000
-	beep -f $f -l $l2000;
-	sleep $l2
+	beep -f $f -l $play_time;
+	sleep $sleep_time;
 }
 c() {    f=261.626; bp; }
 db() {   f=277.183; bp; }
