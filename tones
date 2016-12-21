@@ -4,6 +4,7 @@ quarter=$( echo "scale=2; 60 / $bpm" | bc );
 quarter_eigth=$( echo "scale=2; $quarter * 1.5" | bc);
 eigth=$( echo "scale=2; $quarter / 2" | bc )
 halves=$( echo "scale=2; $quarter * 2" | bc )
+halves_quarter=$( echo "scale=2; $quarter + $halves" | bc )
 whole=$( echo "scale=2; $quarter * 4" | bc )
 
 l=$quarter;
@@ -13,6 +14,13 @@ octave_high=2;
 octave_low=0.5;
 
 factor=$octave
+
+up () {
+	factor=$factor*2
+}
+down() {
+	factor=$( echo "scale=2; $factor * 0.5 " | bc )
+}
 
 bp () {
    f=$( echo "scale=2; $f * $factor" | bc )
@@ -36,35 +44,6 @@ ab() { 	f=415.305; bp; }
 a() {	 	f=440;  bp;}
 bb() {   f=466.164; bp; }
 b() {		f=493.164; bp; }
+p() { f=0; sleep $l; }
 
 
-
-
-
-
-
-#b
-#bb
-#a
-#ab
-#g
-#gb
-#f
-#e
-#eb
-#d
-#db
-#c
-#factor=$octave_low
-#b
-#bb
-#a
-#ab
-#g
-#gb
-#f
-#e
-#eb
-#d
-#db
-#c

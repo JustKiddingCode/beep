@@ -1,0 +1,42 @@
+#!/bin/bash
+
+bpm=150
+
+source tones
+
+l=$quarter; d; b; a; g;
+l=$halves_quarter; d; l=$eigth; d; d;
+l=$quarter; d; b;a; g;
+l=$halves_quarter; e; l=$quarter; p;
+e; factor=$octave_high; c; factor=$octave; b; a;
+
+l=$halves_quarter; gb; l=$quarter; p;
+factor=$octave_high; d; d; c; factor=1; a;
+l=$whole; b;
+l=$quarter; d; b; a; g; l=$halves_quarter; d; l=$quarter; p
+d; b; a; g;
+
+l=$halves_quarter; e; l=$quarter; e;
+e; up; c; down; b; a; up; d; d; d; d;
+e; d; c; down; a;
+l=$halves_quarter; g; l=$quarter; p;
+
+l=$quarter; b; b; l=$halves; b;
+l=$quarter; b; b; l=$halves; b;
+l=$quarter; b; up; d; down; l=$quarter_eigth; g; l=$eigth; a;
+l=$halves_quarter; b; l=$quarter; p
+
+up; c; c; l=$quarter_eigth; c; l=$eigth; c;
+l=$quarter; c; down; b; b; l=$eigth; b; b;
+l=$quarter; b; a; a; b;
+l=$halves; a; up; d; down;
+
+
+l=$quarter; b; b; l=$halves; b;
+l=$quarter; b; b; l=$halves; b;
+l=$quarter; b; up; d; down; l=$quarter_eigth; g; l=$eigth; a;
+l=$halves_quarter; b; l=$quarter; p
+
+up; c; c; l=$quarter_eigth; c; l=$eigth; c;
+l=$quarter; c; down; b; b; l=$eigth; b; b; up;
+l=$quarter; d; d; c; down; a; g;
