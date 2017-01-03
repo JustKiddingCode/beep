@@ -3,6 +3,8 @@
 quarter=$( echo "scale=2; 60 / $bpm" | bc );
 quarter_eigth=$( echo "scale=2; $quarter * 1.5" | bc);
 eigth=$( echo "scale=2; $quarter / 2" | bc )
+sixteenth=$( echo "scale=2; $quarter / 4" | bc )
+eigth_sixteenth=$( echo "scale=2; $eigth + $sixteenth" | bc )
 halves=$( echo "scale=2; $quarter * 2" | bc )
 halves_quarter=$( echo "scale=2; $quarter + $halves" | bc )
 whole=$( echo "scale=2; $quarter * 4" | bc )

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+bpm=120
+
+source tones
+
+
+l=$eigth_sixteenth; d; l=$sixteenth; d 
+l=$quarter; e; d; g;
+l=$halves; gb;
+l=$eigth_sixteenth; d; l=$sixteenth; d
+
+l=$quarter; e; d; a;
+l=$halves; g;
+l=$eigth_sixteenth; d; l=$sixteenth; d
+factor=$octave_high; l=$quarter; d; factor=$octave; b; g;
+gb; e; 
+factor=$octave_high;
+l=$eigth_sixteenth; c; l=$sixteenth; c
+factor=$octave
+l=$quarter; b; g; a;
+l=$halves; g;
