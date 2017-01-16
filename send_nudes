@@ -1,0 +1,4 @@
+#!/bin/bash
+source morse
+
+s; e; n; d; pause; n; u; d; e; s;

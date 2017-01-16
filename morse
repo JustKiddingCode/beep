@@ -1,0 +1,136 @@
+short() {
+	beep -f 400 -l 300
+	sleep 0.2
+}
+
+long() {
+	beep -f 400 -l 900
+	sleep 0.2
+}
+
+pause() {
+	sleep 1
+}
+
+sp() {
+	sleep 0.3
+}
+
+a (){
+	short; long
+	sp
+}
+b (){
+	long; short; short; short;
+	sp
+}
+c() {
+	long; short; long; short;
+	sp
+}
+
+d() {
+	long; short; short
+	sp
+}
+
+e() {
+	short;
+	sp
+}
+
+f() {
+	short; short; long; short;
+	sp
+}
+
+g() {
+	long; long; short
+	sp
+}
+h() {
+	short; short; short; short
+	sp
+}
+i() {
+	short; short;
+	sp
+}
+
+j(){
+	short; long; long; long;
+	sp
+}
+
+k() {
+	long; short; long
+	sp
+}
+l() {
+	short; long; short; short
+	sp
+}
+m() {
+	long; long
+	sp
+}
+n() {
+	long;
+	short;
+	sp
+}
+o(){
+	long; long; long
+	sp
+}
+p() {
+	short;
+	long; long;
+	short;
+	sp
+}
+q() {
+	long; long; short; long
+	sp
+}
+
+r() {
+	short; long; short;
+	sp
+}
+
+s() {
+	short; short; short
+	sp
+}
+
+t() {
+	long;
+	sp
+}
+
+u() {
+	short; short; long
+	sp
+}
+v() {
+	short; short; short; long
+	sp
+}
+w() {
+	short; long; long;
+	sp
+}
+x() {
+	long; short; short; long
+	sp
+}
+
+y () {
+	long; short; long; long
+	sp
+}
+z () {
+	long; long; short; short
+	sp
+}
